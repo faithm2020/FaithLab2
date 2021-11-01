@@ -61,4 +61,11 @@ function moveBear(e) {
   if (e.keyCode == KEYDOWN) {
     bear.move(0, 1);
   } // down key
+
+  this.move = function (xDir, yDir) {
+    this.fitBounds(); //we add this instruction to keep bear within board
+    this.x += this.dBear * xDir;
+    this.y += this.dBear * yDir;
+    this.display();
+  };
 }
