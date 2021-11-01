@@ -21,6 +21,7 @@ function Bear() {
 function start() {
   //create bear
   bear = new Bear();
+  document.addEventListener("keydown", moveBear, false);
 }
 
 // Handle keyboad events
