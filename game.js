@@ -67,6 +67,7 @@ function moveBear(e) {
   if (e.keyCode == KEYDOWN) {
     bear.move(0, 1);
   } // down key
+  let setSpeed = document.getElementById("speedBear").value;
 }
 
 class Bee {
