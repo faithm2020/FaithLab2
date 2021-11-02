@@ -31,7 +31,6 @@ function Bear() {
     if (this.y <= 0) this.y = 0;
     if (this.y > h - ih) this.y = h - ih;
   };
-  this.setSpeed = 
 }
 
 function start() {
@@ -68,7 +67,6 @@ function moveBear(e) {
   if (e.keyCode == KEYDOWN) {
     bear.move(0, 1);
   } // down key
-
 }
 
 class Bee {
@@ -141,7 +139,7 @@ function createBeeImg(wNum) {
   return img;
 }
 
-function getRandomInt(max) { 
+function getRandomInt(max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - 0 + 1)) + 0;
 }
