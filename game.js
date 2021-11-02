@@ -44,6 +44,8 @@ function start() {
   //create bees
   makeBees();
   start.addEventListener("click", start, true);
+  //take start time
+  lastStingTime = new Date();
 }
 
 // Handle keyboad events
@@ -69,7 +71,7 @@ function moveBear(e) {
   if (e.keyCode == KEYDOWN) {
     bear.move(0, 1);
   } // down key
-  let setSpeed = document.getElementById("speedBear").value;
+  let setSpeed = document.getElementById("setSpeedBear").value;
 }
 
 class Bee {
