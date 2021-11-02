@@ -43,6 +43,7 @@ function start() {
   document.addEventListener("updateTimer", updateBees, false);
   //create bees
   makeBees();
+  start.addEventListener("click", start, true);
 }
 
 // Handle keyboad events
